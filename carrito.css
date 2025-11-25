@@ -1,0 +1,254 @@
+.cart {
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart__title {
+    font-family: 'Berlin Sans FB Demi', sans-serif;    
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.cart__content {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 3rem;
+    align-items: start;
+}
+
+.cart__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto auto auto;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.cart-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cart-item__image {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.cart-item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-item__details {
+    flex: 1;
+}
+
+.cart-item__title {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+}
+
+.cart-item__description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Impact', sans-serif;
+    font-family: 'Impacted', sans-serif;
+}
+
+
+
+.cart-item__quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+}
+
+.quantity__btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity__btn:hover {
+    background: var(--color-dark);
+}
+
+.quantity__value {
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.cart__summary {
+    position: sticky;
+    top: 2rem;
+}
+
+.summary__card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1.5rem;
+}
+
+.summary__title {
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.summary__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.summary__row--total {
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+}
+
+.summary__label {
+    font-family: 'Impact', sans-serif;
+    font-family: 'Impacted', sans-serif;
+    color: #666;
+}
+
+.summary__value {
+    font-family: 'Impact', sans-serif;
+font-family: 'Impacted', sans-serif;
+    font-weight: 600;
+}
+
+.summary__value--free {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.summary__value--discount {
+    color: #00c853;
+}
+
+.summary__value--total {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+}
+
+.summary__divider {
+    height: 2px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-gold));
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+.summary__checkout-btn {
+    width: 100%;
+    background: var(--color-dark);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-bottom: 1rem;
+}
+
+.summary__checkout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(8, 52, 175, 0.3);
+}
+
+.summary__security {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    color: #666;
+    font-size: 0.9rem;
+    font-family: 'Impact', sans-serif;
+    font-family: 'Impacted', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.summary__continue {
+    text-align: center;
+}
+
+.continue__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.continue__link:hover {
+    color: var(--color-primary);
+}
+
+.header__cart-count {
+    background: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.3rem;
+}
+
+#sub{
+    font-family: 'Impact', sans-serif;
+    font-family: 'Impacted', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-dark);
+    text-align: center;
+
+}

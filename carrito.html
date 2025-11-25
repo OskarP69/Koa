@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - KOA: Rito Ancestral</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="stylesheet" href="carrito.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="recursos/logo2-removebg-preview.png" alt="KOA Logo" class="header__logo-image">
+                <div class="header__logo-text">
+                    <span class="header__logo-main">KOA</span>
+                    <span class="header__logo-subtitle">Rito ancestral</span>
+                </div>
+            </a>
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-link">Inicio</a>
+                <a href="carrito.html" class="header__nav-link header__nav-link--active">Carrito</a>
+                <a href="gameboard.html" class="header__nav-link">Gameboard</a>
+                <a href="contactanos.html" class="header__nav-link">Contactanos</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Tu carrito de Compras</h1>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="cart__container">            
+            <div class="cart__content">
+                <div class="cart__items">
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="recursos/juego.jpg" alt="CAJA">
+                        </div>
+                        <div class="cart-item__details">
+                            <h3 class="cart-item__title">KOA: Rito Ancestral</h3>
+                            <p class="cart-item__description">Juego de cartas</p>
+                            <div class="cart-item__meta">
+                                <span class="cart-item__category">Cardboard</span>
+                            </div>
+                        </div>
+                        <div class="cart-item__quantity">
+                            <button class="quantity__btn quantity__btn--decrease">-</button>
+                            <span class="quantity__value" id="cont">1</span>
+                            <button class="quantity__btn quantity__btn--increase">+</button>
+                        </div>
+                <div class="cart__summary">
+                    <div class="summary__card">
+                        <h3 class="summary__title">Resumen del Pedido</h3>
+                        
+                        <div class="summary__row">
+                            <span class="summary__label">Subtotal</span>
+                            <span class="summary__value">200.00</span>
+                        </div>
+                        
+                        <div class="summary__row">
+                            <span class="summary__label">Envío</span>
+                            <span class="summary__value summary__value--free">GRATIS</span>
+                        </div>
+                                                
+                        <div class="summary__divider"></div>
+                        
+                        <div class="summary__row summary__row--total">
+                            <span class="summary__label">Total</span>
+                            <span class="summary__value summary__value--total">200.00</span>
+                        </div>
+                            <a href="contactanos.html" class="card__button">Pagar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Donde recoger tu Pedido</h1>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="cards__container">
+            <div class="card">
+                <img src="recursos/mercaditoFriki.jpg" alt="KOA: Rito Ancestral" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Mercadito Friki</h3>
+                    <p class="card__text">Nataniel Aguirre, Cochabamba</p>
+                    <a href="https://maps.app.goo.gl/vFnRTCKZzT2Xgz7LA" class="card__button">Ir a Google Maps</a>
+
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="recursos/magic.jpg" alt="Equipo de trabajo" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Magic Card Games</h3>
+                    <p class="card__text">Edifcio Los Robles, Av. Juan de la Rosa y, Cochabamba</p>
+                    <a href="https://maps.app.goo.gl/7S8RwShd7dEvFeGQ8" class="card__button">Ir a Google Maps</a>
+
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="recursos/IMG_20251112_102406.jpg" alt="manual" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Black Lotus</h3>
+                    <p class="card__text">Edificio Sky Box, Av. Heroinas, casi Antezana.</p>
+                    <a href="https://maps.app.goo.gl/onQCnc8yi6MJoxmM7" class="card__button">Ir a Google Maps</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h3 class="footer__section-title">KOA BOLIVIA</h3>
+                <p>Empresa dedicada a ofrecer juegos educativos de alta calidad.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer__section">
+                <h3 class="footer__section-title">Enlaces Rápidos</h3>
+                <ul class="footer__links">
+                    <li class="footer__link-item"><a href="index.html" class="footer__link">Inicio</a></li>
+                    <li class="footer__link-item"><a href="carrito.html" class="footer__link">Compra el Juego</a></li>
+                    <li class="footer__link-item"><a href="contactanos.html" class="footer__link">Más de Nosotros</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__section">
+                <h3 class="footer__section-title">Contacto</h3>
+                <ul class="footer__links">
+                    <li class="footer__link-item"><i class="fas fa-map-marker-alt"></i> Cochabamba, Bolivia</li>
+                    <li class="footer__link-item"><i class="fas fa-phone"></i> +591 7778899</li>
+                    <li class="footer__link-item"><i class="fas fa-envelope"></i> @koa_ritoancestral_oficial.com</li>
+                </ul>
+            </div>
+        </div>
+        <script src="carrito.js"></script>
+
+    </footer>
+    
+</body>
+</html>
